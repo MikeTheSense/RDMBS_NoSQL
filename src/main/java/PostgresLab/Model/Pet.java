@@ -41,6 +41,13 @@ public class Pet implements Serializable {
         this.dateOfDeath = dateOfDeath;
         this.person = person;
     }
+    public Pet(int id,String petname, Date dateOfBirth, Date dateOfDeath, Person person) {
+        this.id = id;
+        this.petname = petname;
+        this.dateOfBirth = dateOfBirth;
+        this.dateOfDeath = dateOfDeath;
+        this.person = person;
+    }
     public Pet(String petname, Date dateOfBirth, Date dateOfDeath) {
         this.petname = petname;
         this.dateOfBirth = dateOfBirth;
@@ -48,10 +55,15 @@ public class Pet implements Serializable {
         this.person = person;
     }
 
+    public Pet() {
+    }
+
     public String getPetname() {
         return petname;
     }
-
+    public int getId() {
+        return id;
+    }
     public void setPetname(String petname) {
         this.petname = petname;
     }

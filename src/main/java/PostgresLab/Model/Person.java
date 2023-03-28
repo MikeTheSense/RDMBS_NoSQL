@@ -63,8 +63,21 @@ public class Person implements Serializable {
 
     }
 
+    public Person(int id, String firstname, String lastname, Date dateOfBirth, Person father, Date dateOfDeath) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.dateOfBirth = dateOfBirth;
+        this.father = father;
+        this.dateOfDeath = dateOfDeath;
+    }
+
     public String getFirstname() {
         return firstname;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setFirstname(String firstname) {
